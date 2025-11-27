@@ -7,7 +7,7 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 
-
+CORS(app)
 
 # Gmail SMTP configuration
 SMTP_SERVER = "smtp.gmail.com"
