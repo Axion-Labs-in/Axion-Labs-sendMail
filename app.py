@@ -7,16 +7,7 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 
-CORS(app, resources={
-    r"/*": {
-        "origins": [
-            "https://axionlabs.co.in",
-            "https://www.axionlabs.co.in",
-            "https://axionlabs-io.web.app",
-            "https://axionlabs-io.firebaseapp.com"
-        ]
-    }
-})
+
 
 # Gmail SMTP configuration
 SMTP_SERVER = "smtp.gmail.com"
