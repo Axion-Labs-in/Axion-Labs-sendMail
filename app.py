@@ -36,6 +36,14 @@ Best Regards,
 Axion Labs
 """
 
+@app.route("/home", methods=["GET"])
+def home():
+    return jsonify({"status": "success", "message": "Hello world"}), 200
+    
+@app.route("/", methods=["GET"])
+def health():
+    return jsonify({"status": "ok"}), 200
+
 @app.route("/send-email", methods=["POST"])
 def send_email():
     try:
